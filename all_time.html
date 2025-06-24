@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .time {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h2>時間輸入</h2>
+
+    <form action="">
+        
+        <div class="time">
+            <label for="date">日期:</label>
+            <input type="date" name="date" id="date">
+        </div>
+        
+        <div class="time">
+            <label for="time">時間:</label>
+            <input type="time" name="time" id="time">
+        </div>
+        
+        <div class="time">
+            <label for="datetime-local">日期時間:</label>
+            <input type="datetime-local" name="datetime-local" id="datetime-local">
+        </div>
+
+        </form>
+    
+    <h2>數字輸入</h2>
+    
+    <form action="https://book.niceinfos.com/api/form/index.php">
+        <input type="number" name="number" id="number" min="0" max="100" step="5" />
+        <input type="submit" value="送出" />
+    </form>
+
+</body>
+</html>

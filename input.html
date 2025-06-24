@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Input</title>
+    </head>
+    <body>
+        <form action="">
+            <!-- 文字輸入框 -->
+            <!-- name 是後端接收的變數名稱，在 form 中才有用 -->
+            <input type="text" name="username" id="num1" /> <span>加</span>
+            <input type="text" name="username" id="num2" /> <span>等於</span>
+            <button id="btn">計算</button>
+        </form>
+
+        <h2>Password</h2>
+
+        <form
+            action="https://book.niceinfos.com/api/form/index.php"
+            method="POST"
+            enctype="application/x-www-form-urlencoded"
+        >
+            <label for="password">密碼</label>
+            <input
+                type="password"
+                name="pwd"
+                id="password"
+                placeholder="password" />
+            <input type="submit" value="登入" />
+        </form>
+
+        <h2>單選</h2>
+
+        <form action="https://book.niceinfos.com/api/form/index.php" method="POST" enctype="application/x-www-form-urlencoded">
+            <div>
+                <label for="gender">性別</label>
+            </div>
+            <div>
+                
+                <input type="radio" name="gender" id="male" placeholder="male" checked/>
+                <label for="male">男</label>
+            </div>
+            
+            <div>
+                
+                <input type="radio" name="gender" id="female" placeholder="female"/>
+                <label for="female">女</label>
+            </div>
+
+            <div>
+                <input type="submit" value="送出" />
+            </div>
+        </form>
+
+        
+        
+
+        <h2>多選</h2>
+
+            <form action="https://book.niceinfos.com/api/form/index.php" method="POST" enctype="application/x-www-form-urlencoded">
+            <div>
+                <label for="hobby">喜好</label>
+            </div>
+            <div>
+                
+                <input type="checkbox" name="gender" id="cumputer" placeholder="cumputer" checked/>
+                <label for="cumputer">電腦</label>
+            </div>
+            
+            <div>
+                
+                <input type="checkbox" name="gender" id="music" placeholder="music"/>
+                <label for="music">音樂</label>
+            </div>
+
+            <div>
+                
+                <input type="checkbox" name="gender" id="python" placeholder="python"/>
+                <label for="python">寫程式</label>
+            </div>
+
+            <div>
+                
+                <input type="checkbox" name="gender" id="outdoor" placeholder="outdoor"/>
+                <label for="outdoor">出遊</label>
+            </div>
+
+            <div>
+                <input type="submit" value="送出" />
+            </div>
+        </form>
+    </body>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        const num1 = document.getElementById("num1");
+        const num2 = document.getElementById("num2");
+        const btn = document.getElementById("btn");
+        btn.addEventListener("click", () => {
+            const result = parseInt(num1.value) + parseInt(num2.value);
+            console.log(result);
+        });
+    </script>
+</html>

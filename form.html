@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Method_GET</h2>
+
+    <form action="" method="get" enctype="application/x-www-form-urlencoded">
+        <input type="text" name="username" placeholder="username">
+        <input type="password" name="password" placeholder="password">
+        <input type="submit" value="login">
+
+    <h2>Method_post</h2>
+    <form action="https://book.niceinfos.com/api/form/index.php" method="POST" enctype="application/x-www-form-urlencoded">
+        <input type="text" name="username" placeholder="username">
+        <input type="password" name="password" placeholder="password">
+        <input type="submit" value="login">
+
+        
+    </form>
+
+    <h2>Method_image</h2>
+    <form action="https://book.niceinfos.com/api/form/index.php" method="POST" enctype="multipart/form-data">
+       <input type="file" name="picture">
+       <input type="submit" value="upload">
+    </form>
+</body>
+
+    <script>
+        const demo='測試一下'
+        const ency=encodeURIComponent(demo)
+        console.log(ency)
+    </script>
+</html>
